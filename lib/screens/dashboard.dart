@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:saathi/screens/profile.dart';
 
 class DashBoardScreen extends StatefulWidget {
   const DashBoardScreen({super.key});
@@ -103,16 +104,24 @@ class _DriverListState extends State<DriverList> {
                                 ],
                               ),
                             )),
-                        Container(
-                          color: const Color.fromARGB(255, 151, 170, 238),
-                          width: mq.width * .4,
-                          child: const Padding(
-                            padding: EdgeInsets.all(8.0),
-                            child: Text(
-                              'Details',
-                              style: TextStyle(
-                                  fontSize: 16, fontWeight: FontWeight.bold),
-                              textAlign: TextAlign.center,
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => ProfileScreen()));
+                          },
+                          child: Container(
+                            color: const Color.fromARGB(255, 151, 170, 238),
+                            width: mq.width * .4,
+                            child: const Padding(
+                              padding: EdgeInsets.all(8.0),
+                              child: Text(
+                                'Details',
+                                style: TextStyle(
+                                    fontSize: 16, fontWeight: FontWeight.bold),
+                                textAlign: TextAlign.center,
+                              ),
                             ),
                           ),
                         ),
