@@ -25,13 +25,13 @@ class _DashBoardScreenState extends State<DashBoardScreen> {
               ),
               Image.asset(
                 'lib/images/truck_icon.png',
-                width: MediaQuery.of(context).size.width * .3,
+                width: MediaQuery.of(context).size.width * .2,
               ),
               IconButton(
                   onPressed: () {},
                   icon: const Icon(
                     Icons.search,
-                    size: 40,
+                    size: 35,
                   )),
             ],
           ),
@@ -105,13 +105,13 @@ class _DriverListState extends State<DriverList> {
                             )),
                         Container(
                           color: const Color.fromARGB(255, 151, 170, 238),
-                          width: mq.width / 2,
+                          width: mq.width * .4,
                           child: const Padding(
                             padding: EdgeInsets.all(8.0),
                             child: Text(
                               'Details',
                               style: TextStyle(
-                                  fontSize: 20, fontWeight: FontWeight.bold),
+                                  fontSize: 16, fontWeight: FontWeight.bold),
                               textAlign: TextAlign.center,
                             ),
                           ),
@@ -131,13 +131,13 @@ class _DriverListState extends State<DriverList> {
       children: [
         Text(
           "$text1 : ",
-          style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+          style: const TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
           textAlign: TextAlign.center,
         ),
         Text(
           text2,
           style: const TextStyle(
-            fontSize: 18,
+            fontSize: 15,
           ),
           textAlign: TextAlign.center,
         ),
