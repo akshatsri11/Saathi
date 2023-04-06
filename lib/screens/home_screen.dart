@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:saathi/notification.dart';
 import 'package:saathi/screens/profile.dart';
 
 import 'dashboard.dart';
@@ -16,7 +17,7 @@ class _HomeScreenState extends State<HomeScreen> {
     const DashBoardScreen(),
     const DashBoardScreen(),
     const DashBoardScreen(),
-    const DashBoardScreen(),
+    const notification(),
     const ProfileScreen()
   ];
   void _onTapItem(int index) {
@@ -55,7 +56,9 @@ class _HomeScreenState extends State<HomeScreen> {
               label: ''),
           BottomNavigationBarItem(
               icon: Icon(
+                
                 Icons.notifications,
+              
                 color: Colors.black,
                 size: 40,
               ),
