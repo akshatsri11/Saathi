@@ -1,9 +1,7 @@
-import 'dart:js';
-
 import 'package:flutter/material.dart';
 import 'package:saathi/components/myButton.dart';
 import 'package:saathi/components/myText.dart';
-import 'package:saathi/main.dart';
+
 import 'package:saathi/screens/home_screen.dart';
 
 class LoginPage extends StatelessWidget {
@@ -11,10 +9,6 @@ class LoginPage extends StatelessWidget {
 
   final usernameController = TextEditingController();
   final passwordController = TextEditingController();
-  void loginUser() {
-    Navigator.of(context as BuildContext)
-        .push(MaterialPageRoute(builder: (context) => HomeScreen()));
-  }
 
   @override
   Widget build(BuildContext context) {
