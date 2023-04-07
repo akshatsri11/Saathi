@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:saathi/location.dart';
 import 'package:saathi/notification.dart';
 import 'package:saathi/screens/profile.dart';
 
@@ -16,7 +17,7 @@ class _HomeScreenState extends State<HomeScreen> {
   final List<Widget> _screenOptions = <Widget>[
     const DashBoardScreen(),
     const DashBoardScreen(),
-    const DashBoardScreen(),
+        location(),
     const notification(),
     const ProfileScreen()
   ];
