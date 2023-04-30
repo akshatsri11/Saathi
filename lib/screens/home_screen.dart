@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:saathi/location.dart';
 import 'package:saathi/notification.dart';
 import 'package:saathi/screens/profile.dart';
-
 import 'dashboard.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -17,7 +16,7 @@ class _HomeScreenState extends State<HomeScreen> {
   final List<Widget> _screenOptions = <Widget>[
     const DashBoardScreen(),
     const DashBoardScreen(),
-        location(),
+    location(),
     const notification(),
     const ProfileScreen()
   ];
@@ -57,9 +56,7 @@ class _HomeScreenState extends State<HomeScreen> {
               label: ''),
           BottomNavigationBarItem(
               icon: Icon(
-                
                 Icons.notifications,
-              
                 color: Colors.black,
                 size: 40,
               ),
